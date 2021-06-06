@@ -14,6 +14,8 @@
 		971333F226656FA700B5DE1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971333F026656FA700B5DE1D /* LaunchScreen.storyboard */; };
 		971333FD2665705000B5DE1D /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971333FC2665705000B5DE1D /* StartPageViewController.swift */; };
 		971333FF266570A800B5DE1D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971333FE266570A800B5DE1D /* LoginViewController.swift */; };
+		976E7C7626680259000C46C7 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E7C7526680259000C46C7 /* FriendsViewController.swift */; };
+		976E7C79266806A6000C46C7 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976E7C78266806A6000C46C7 /* FriendsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		971333F326656FA700B5DE1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		971333FC2665705000B5DE1D /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
 		971333FE266570A800B5DE1D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		976E7C7526680259000C46C7 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		976E7C78266806A6000C46C7 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 				971333EB26656FA600B5DE1D /* Main.storyboard */,
 				971333FE266570A800B5DE1D /* LoginViewController.swift */,
 				971333FC2665705000B5DE1D /* StartPageViewController.swift */,
+				976E7C712667FECD000C46C7 /* Friends */,
 				971333FA2665700600B5DE1D /* Resources */,
 				971333F926656FC300B5DE1D /* Configuration */,
 			);
@@ -92,6 +97,31 @@
 				971333E726656FA600B5DE1D /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		976E7C712667FECD000C46C7 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				976E7C7726680657000C46C7 /* View */,
+				976E7C7226680146000C46C7 /* Controller */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		976E7C7226680146000C46C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				976E7C7526680259000C46C7 /* FriendsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		976E7C7726680657000C46C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				976E7C78266806A6000C46C7 /* FriendsTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +195,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				971333FF266570A800B5DE1D /* LoginViewController.swift in Sources */,
+				976E7C7626680259000C46C7 /* FriendsViewController.swift in Sources */,
 				971333E626656FA600B5DE1D /* AppDelegate.swift in Sources */,
+				976E7C79266806A6000C46C7 /* FriendsTableViewCell.swift in Sources */,
 				971333FD2665705000B5DE1D /* StartPageViewController.swift in Sources */,
 				971333E826656FA600B5DE1D /* SceneDelegate.swift in Sources */,
 			);

@@ -16,7 +16,6 @@ class StartPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        logoStartPageImage.layer.cornerRadius = 25
         registrationButton.layer.cornerRadius = 8
         goToLoginViewButton.layer.cornerRadius = 8
     }

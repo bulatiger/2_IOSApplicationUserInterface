@@ -17,7 +17,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        logoLoginViewImage.layer.cornerRadius = 25
         loginTextField.layer.cornerRadius = 8
         passwordTextField.layer.cornerRadius = 8
         loginButton.layer.cornerRadius = 8
@@ -40,16 +39,33 @@ class LoginViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-    
-    @IBAction func loginButtonPassword(_ sender: UIButton) {
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         // Получаем текст логина
         let login = loginTextField.text
         // Получаем текст-пароль
         let password = passwordTextField.text
-        if (login == "admin") && (password == "123456") {
+        if (login == "") && (password == "") {
             print("Операция успешна")
+            return true
         } else {
             print("Логин или пароль неверен")
+            showAlertError()
+            return false
+        }
+    }
+    
+    private func showAlertError() {
+        let alert = UIAlertController(title: "ОШИБКА", message: "Логин или пароль неверен", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .default) { _ in
+            self.loginTextField.text = ""
+            self.passwordTextField.text = ""
+            print("Alert tapped")
+        }
+        
+        alert.addAction(action)
+        self.present(alert, animated: true) {
+            print("Alert closed")
         }
     }
     
@@ -75,5 +91,5 @@ class LoginViewController: UIViewController {
         scrollView?.contentInset = contentInsets
         scrollView?.scrollIndicatorInsets = contentInsets
     }
-
+    
 }
