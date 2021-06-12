@@ -20,6 +20,20 @@ class AllGroupViewController: UIViewController {
         tableView.dataSource = self
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "showSearchGroup",
+//           let sourceController = segue.source as? GroupsViewController {
+//            print("HELLO")
+//            let userGroups = sourceController.groups
+//            groups = userGroups
+//            for item in userGroups where groups.contains(where: { $0.name == item.name }) {
+//                let indexItem = groups.firstIndex(where: { $0.name == item.name })
+//                groups.remove(at: indexItem!)
+//            }
+//            tableView.reloadData()
+//            print("WORLD")
+//        }
+//    }
 }
 
 extension AllGroupViewController: UITableViewDelegate, UITableViewDataSource {
@@ -32,6 +46,4 @@ extension AllGroupViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(groups[indexPath.row])
         return cell
     }
-    
-    
 }

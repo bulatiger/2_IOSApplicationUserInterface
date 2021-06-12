@@ -18,7 +18,7 @@ final class FriendsTableViewCell: UITableViewCell {
         avatarFriendImage.image = UIImage(named: friend.avatar)
         nameFriendLabel.text = friend.name
         
-        avatarFriendImage.layer.borderWidth = 1.0
+        //avatarFriendImage.layer.borderWidth = 1.0
         avatarFriendImage.layer.cornerRadius = avatarFriendImage.frame.size.height / 2
     }
     

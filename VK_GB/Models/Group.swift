@@ -21,19 +21,18 @@ struct GroupStorage {
     var searchGroup: [Group]
     
     private init() {
-        groups = [
-            Group(name: "Футбол в Дербышках", avatar: "figure.walk"),
-            Group(name: "Автомобили", avatar: "car"),
-            Group(name: "Компьютеры", avatar: "laptopcomputer"),
-            Group(name: "Программирование", avatar: "keyboard"),
-            Group(name: "Apple", avatar: "applelogo")
-        ]
+        groups = []
         searchGroup = [
-            Group(name: "Биржевые ставки", avatar: "dollarsign.circle.fill"),
-            Group(name: "Авиабилеты дешево", avatar: "airplane"),
-            Group(name: "Знакомства", avatar: "heart.fill"),
-            Group(name: "Все для игроманов", avatar: "gamecontroller.fill"),
-            Group(name: "Ремонт компьютеров", avatar: "pc")
+            Group(name: "Футбол по выходным", avatar: "fut"),
+            Group(name: "Автомобили", avatar: "auto"),
+            Group(name: "Компьютеры", avatar: "comp"),
+            Group(name: "Программирование", avatar: "swift"),
+            Group(name: "Новости Apple", avatar: "apple"),
+            Group(name: "Биржевые ставки", avatar: "birzha"),
+            Group(name: "Авиабилеты дешево", avatar: "avia"),
+            Group(name: "Общение на любые темы", avatar: "znakom"),
+            Group(name: "Все для игроманов", avatar: "gamer"),
+            Group(name: "Ремонт компьютеров", avatar: "remont")
         ]
         }
 }
