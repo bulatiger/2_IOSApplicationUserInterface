@@ -9,7 +9,6 @@ import UIKit
 
 class PhotoUserViewController: UIViewController {
     
-    
     @IBOutlet weak var collectionView: UICollectionView!
     
     var photos: [Photo] = []
